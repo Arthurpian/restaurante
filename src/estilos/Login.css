@@ -1,0 +1,40 @@
+.login {
+    padding: 5rem;
+}
+
+.form{
+    border: 2px solid black;
+    padding: 2rem;
+    border-radius: 5px;
+    background-image: url('../assets/fundo_login.jpg');
+    opacity: 85%;
+}
+
+.Login_login {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 2rem;
+    font-weight: 950;
+}
+
+.button_login{
+    display: flex;
+    justify-content: center;
+}
+
+.Login_button {
+    width: 4rem;
+    height: 2rem;
+    font-size: 1rem;
+    font-weight: 800;
+    color: black;
+}
+
+@media screen and (max-width:477px) {
+    .form{
+        border: 0 solid;
+        background-image: url();
+    }
+}
+

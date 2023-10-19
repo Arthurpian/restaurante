@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Logo from '../assets/Logo1.png';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -37,7 +37,7 @@ function Nav() {
 
           <div className="login-button">
             <button>
-              <a href="#">Login</a>
+              <Link to="/login">Login</Link>
             </button>
           </div>
 

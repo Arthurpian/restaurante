@@ -1,16 +1,21 @@
 import { useRef } from 'react';
 import Produtos from './Produtos';
+import '../estilos/Login.css'
+
+import dia_mexico from '../assets/Dia_mortos.jpg'
 
 function Login() {
-  /*hook useref ele retorna uma referencia a um elemento ou componente sem ter que ser renderizado novamente e também permite acesso ao DOM */
+
+
+ 
   const user = useRef();
   const password = useRef();
-  /* pegando o usuario e adcionando ao sessionStorage */
+
   const getUser = sessionStorage.getItem('userData');
-  /* pegando o senha e adcionando ao sessionStorage */
+
   const getSenha = sessionStorage.getItem('senhaData');
 
-  /*função que verifica se o usuario e senha são validos e grava na sessão */
+
   const handleSubmit = () => {
     if (user.current.value === 'admin' && password.current.value === '12345') {
       let token =
@@ -23,31 +28,48 @@ function Login() {
     }
   };
 
+
+
   return (
     <section>
-      <h1>Login</h1>
-      {/* if ternario*/}
+      
       {getUser && getSenha ? (
         <Produtos />
       ) : (
-        /* chamando a função handleSubmit dentro do form*/
-        <form onSubmit={handleSubmit}>
-          <p>
-            USUÁRIO:
-            {/* passando a referencia no usuario */}
-            <input type="text" ref={user} />
-          </p>
-          <br />
-          <p>
-            SENHA:
-            {/* passando a referencia na senha */}
-            <input type="password" ref={password} />
-          </p>
-          <br />
-          <input type="submit" value="Login" />
-        </form>
+      
+        <div className="login">
+          <form className='form' onSubmit={handleSubmit}>
+            <h1 className='heading'>Login</h1>
+            <div className="dados">
+              <p className='Login_login'>
+                USUÁRIO: <input type="text" ref={user} />
+              </p>
+              <br />
+              <p className='Login_login'> 
+              SENHA: <input type="password" ref={password} />
+              </p>
+            </div>
+            <br />
+            <div className="button_login">
+              <input className='Login_button' type="submit" value="Login" />
+
+            </div>
+          </form>
+        </div>
       )}
+      <div className="mexico">
+            <div className="img_conteudo">
+                <img src={dia_mexico} alt='dia_mexico'></img>
+            </div>
+            <div className="conteudo">
+                <h1 className='titulo_texto'>Venha Celebrar o Dia dos Mortos em Nosso Restaurante Mexicano!</h1>
+                <p>É com grande alegria que convidamos você a se juntar a nós em uma celebração única e cultural: o Dia dos Mortos, ou "Día de los Muertos", uma das festas mais icônicas do México!<br></br>
+                    O Dia dos Mortos é uma tradição que tem raízes profundas na cultura mexicana, honrando os entes queridos que já partiram para o além. Embora possa parecer uma celebração sombria, é, na verdade, uma festa colorida, cheia de vida e alegria. É um momento para celebrar e lembrar aqueles que se foram, com amor, respeito e saudade.<br></br>
+                    No nosso restaurante mexicano, estaremos honrando essa tradição da maneira mais autêntica possível. Decoraremos nosso espaço com altares coloridos, oferendas, flores, e as famosas "calacas" (caveiras decoradas).</p>
+            </div>
+        </div>
     </section>
+    
   );
 }
 
