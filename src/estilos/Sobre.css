@@ -1,0 +1,19 @@
+.logo_sobre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.logo_sobre h1 {
+    color: red;
+}
+
+.mexico .sobre_sub {
+    display: flex;
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+  }

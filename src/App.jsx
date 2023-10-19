@@ -1,0 +1,28 @@
+import { } from 'react'
+import { Outlet } from 'react-router-dom'
+import Nav from './components/Nav'
+import Rodape from './components/Rodape'
+// importando a biblioteca de efeitos e transições como slideShow
+import {register} from 'swiper/element/bundle'
+import './estilos/App.css'
+
+register();
+import 'swiper/css';
+import 'swiper/css/scrollbar';
+
+function App() {
+
+
+  return (
+    <> 
+      <Nav/>
+      <body>
+        <Outlet/>
+      </body>
+      <Rodape/>
+    </> 
+  )
+}
+
+export default App
+
