@@ -65,7 +65,7 @@ function Nav() {
 
           <div className="login-button">
             <button>
-              <a href="#">Login</a>
+              <Link to="/login">Login</Link>
             </button>
           </div>
         </div>

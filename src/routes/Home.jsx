@@ -49,8 +49,8 @@ function Home (){
             <SwiperSlide>
                 <div className="slide-content">
                     <img src = {slide_image_2} alt='imagem_2'/>
-                    <h1 className='titulo'>Mole poblano</h1>
-                    <h3 className='descri'>O mole é um prato típico muito saboroso e picante</h3>
+                    <h1 className='titulo'>chili com carne</h1>
+                    <h3 className='descri'>Um tipo de guisado picante</h3>
                     <h4 className='valor'>R$129,30</h4>
                 </div>
             </SwiperSlide>
@@ -58,8 +58,8 @@ function Home (){
             <SwiperSlide>
                 <div className="slide-content">
                     <img src = {slide_image_3} alt='imagem_3'/>
-                    <h1 className='titulo'>Mole poblano</h1>
-                    <h3 className='descri'>O mole é um prato típico muito saboroso e picante</h3>
+                    <h1 className='titulo'>machaca e chilorio</h1>
+                    <h3 className='descri'>Usados como recheio de burritos</h3>
                     <h4 className='valor'>R$129,30</h4>
                 </div>
             </SwiperSlide>
@@ -67,8 +67,8 @@ function Home (){
             <SwiperSlide>
                 <div className="slide-content">
                     <img src = {slide_image_4} alt='imagem_4'/>
-                    <h1 className='titulo'>Mole poblano</h1>
-                    <h3 className='descri'>O mole é um prato típico muito saboroso e picante</h3>
+                    <h1 className='titulo'>Quesadilla</h1>
+                    <h3 className='descri'>Tortilla grelhada com muito, muito queijo e bem recheada</h3>
                     <h4 className='valor'>R$129,30</h4>
                 </div>
             </SwiperSlide>
@@ -76,8 +76,8 @@ function Home (){
             <SwiperSlide>
                 <div className="slide-content">
                     <img src = {slide_image_5} alt='imagem_5'/>
-                    <h1 className='titulo'>Mole poblano</h1>
-                    <h3 className='descri'>O mole é um prato típico muito saboroso e picante</h3>
+                    <h1 className='titulo'>tortilla</h1>
+                    <h3 className='descri'>são pães parecidos com panquecas</h3>
                     <h4 className='valor'>R$129,30</h4>
                 </div>
             </SwiperSlide>
@@ -85,8 +85,8 @@ function Home (){
             <SwiperSlide>
                 <div className="slide-content">
                 <img src = {slide_image_6} alt='imagem_6'/>
-                <h1 className='titulo'>Mole poblano</h1>
-                    <h3 className='descri'>O mole é um prato típico muito saboroso e picante</h3>
+                <h1 className='titulo'>jericalla</h1>
+                    <h3 className='descri'>Um pudim de leite super cremoso</h3>
                     <h4 className='valor'>R$129,30</h4>
                 </div>
             </SwiperSlide>
