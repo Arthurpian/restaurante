@@ -1,0 +1,22 @@
+
+
+.conteudo_erro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.erro {
+    color: red;
+    font-size: 18vw;
+}
+
+.sub-erro {
+    display: flex;
+    text-align: center;
+    color: green;
+    font-size: 6vw;
+}
