@@ -1,12 +1,11 @@
 import { useRef } from 'react';
-import Produtos from './Produtos';
+import Pedido from './Pedido';
 import '../estilos/Login.css'
+import Inserir from './Inserir'
 
 import dia_mexico from '../assets/Dia_mortos.jpg'
 
 function Login() {
-
-
  
   const user = useRef();
   const password = useRef();
@@ -32,9 +31,9 @@ function Login() {
 
   return (
     <section>
-      
+    
       {getUser && getSenha ? (
-        <Produtos />
+        <Pedido />
       ) : (
       
         <div className="login">
@@ -63,11 +62,12 @@ function Login() {
             </div>
             <div className="conteudo">
                 <h1 className='titulo_texto'>Venha Celebrar o Dia dos Mortos em Nosso Restaurante Mexicano!</h1>
-                <p>É com grande alegria que convidamos você a se juntar a nós em uma celebração única e cultural: o Dia dos Mortos, ou "Día de los Muertos", uma das festas mais icônicas do México!<br></br>
+                <p>É com grande alegria que convidamos você a se juntar a nós em uma celebração única e cultural: o Dia dos Mortos, ou Día de los Muertos, uma das festas mais icônicas do México!<br></br>
                     O Dia dos Mortos é uma tradição que tem raízes profundas na cultura mexicana, honrando os entes queridos que já partiram para o além. Embora possa parecer uma celebração sombria, é, na verdade, uma festa colorida, cheia de vida e alegria. É um momento para celebrar e lembrar aqueles que se foram, com amor, respeito e saudade.<br></br>
-                    No nosso restaurante mexicano, estaremos honrando essa tradição da maneira mais autêntica possível. Decoraremos nosso espaço com altares coloridos, oferendas, flores, e as famosas "calacas" (caveiras decoradas).</p>
+                    No nosso restaurante mexicano, estaremos honrando essa tradição da maneira mais autêntica possível. Decoraremos nosso espaço com altares coloridos, oferendas, flores, e as famosas calacas (caveiras decoradas).</p>
             </div>
         </div>
+      <Inserir />
     </section>
     
   );

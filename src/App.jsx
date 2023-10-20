@@ -16,9 +16,7 @@ function App() {
   return (
     <> 
       <Nav/>
-      <body>
-        <Outlet/>
-      </body>
+      <Outlet/>
       <Rodape/>
     </> 
   )

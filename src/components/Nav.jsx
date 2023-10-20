@@ -27,7 +27,7 @@ function Nav() {
                 <Link to="/" className="nav-link">Home</Link>
               </li>
               <li className="nav-item">
-                <a href="/" className="nav-link">Produtos</a>
+                <Link to="/produtos" className="nav-link">Produtos</Link>
               </li>
               <li className="nav-item">
                 <Link to="/sobre" className="nav-link">Sobre</Link>
@@ -56,7 +56,7 @@ function Nav() {
               <Link to="/" className="nav-link">Home</Link>
             </li>
             <li className="nav-item">
-              <a href="#" className="nav-link">Cardapio</a>
+              <Link to="/produtos" className="nav-link">Produtos</Link>
             </li>
             <li className="nav-item">
               <Link to="/sobre" className="nav-link">Sobre</Link>

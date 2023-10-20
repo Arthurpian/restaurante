@@ -1,0 +1,17 @@
+.titulo_insirir {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.sub_insirir {
+    margin: 1rem;
+}
+
+.button_insirir {
+    margin: 1rem;
+}
+
+.button_insirir_first{
+    margin-left: 5rem;
+}

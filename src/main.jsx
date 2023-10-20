@@ -11,6 +11,7 @@ import Excluir from './routes/Excluir.jsx';
 import Conteudo from './routes/Conteudo.jsx';
 import Login from './routes/Login.jsx';
 import Sobre from './routes/Sobre.jsx'
+import Pedido from './routes/Pedido.jsx'
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       { path: '/', element: <Home /> },
       { path: '/login', element: <Login/> },
       { path: '/produtos', element: <Produtos /> },
+      { path: '/Pedido', element: <Pedido /> },
       { path: '/conteudo', element: <Conteudo /> },
       { path: '/cadastrar/produto', element: <Inserir /> },
       /*criando a rota editar produtos e passando o id do produto */

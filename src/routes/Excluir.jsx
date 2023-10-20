@@ -4,19 +4,18 @@ import { ListaProdutos } from '../components/ListaProdutos';
 
 
 function Excluir() {
-  /*Hooks- useParams e Navigate */
   const { id } = useParams();
   const navigate = useNavigate();
 
   const recProdutoListaById = ListaProdutos.filter((item) => item.id == id);
-  /*Hook-useState */
+
   const [produto] = useState({
     id: recProdutoListaById[0].id,
     nome: recProdutoListaById[0].nome,
     desc: recProdutoListaById[0].desc,
     valor: recProdutoListaById[0].valor,
   });
-  /*funções */
+
   const handleExclude = (event) => {
     event.preventDefault();
     let indice;
@@ -38,11 +37,11 @@ function Excluir() {
         <p>valor : {produto.valor}</p>
       </div>
       <div>
-        {/*chamando a função handleExclude dentro do botão*/}
+
         <button onClick={handleExclude} >
           EXCLUIR
         </button>
-        {/*chamando o navigate para voltar para a tela produtos */}
+
         <button onClick={() => navigate('/produtos')}>
           CANCELAR
         </button>
